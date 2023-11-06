@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assgn 4 - Registration Form</title>
+</head>
+<style>
+    .body{
+        width: 100%;
+        overflow-x: hidden;
+        background:linear-gradient(#7D6D61,#5E574D);
+        transition: background 0.5s ease-in-out;
+        margin: 0px;
+    }
+    .banner {
+        overflow: hidden;
+        background-color: #97d4fc;
+        padding-bottom: 0px;
+        box-shadow: 2px 2px red;
+        display: flex; /* Add this line to make the banner flex container */
+        align-items: center; /* Vertically center the content */
+    }
+    .banner .logo {
+        margin-right: 20px; /* Adjust the margin as needed */
+        margin-left: 65px;
+    }
+    .outlinedtext{
+        font-family: "lemon milk";
+        text-align: center;
+    }
+    .footer{
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        height: 100px;
+   }
+   .box{
+    border:dotted;
+    max-width: max-content;
+    margin-left: 520px;
+    background: linear-gradient(#CBA36D,#E2AC6B);
+   }
+   .frm{
+    display:flex;
+    justify-content: space-around;
+   }
+   .frm1{
+    overflow-x: hidden;
+   }
+   .frm2{
+    margin-left: 100px;
+    }
+    .bord{
+    border: 5px solid #97d4fc;
+    border-radius: 8px;
+    max-width:fit-content;
+    max-height: fit-content;
+    }
+    #userImage {
+        max-height: 100px;
+        max-width: 100px;
+   }
+   .frm3{
+    border: 2px solid #1d7dc7;
+    border-radius: 4px;
+    max-width:fit-content;
+    max-height: fit-content;
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+   }
+   .subres{
+    display:flex;
+    align-items: center;
+    margin-left:350px;
+   }
+
+</style>
+<body>
+    <div class="body">
+        <div class="banner">
+            <div class="logo">
+                <img src="/betterstuff/white logo-04.png" height="180px">
+            </div>
+            <div class="outlinedtext">
+            <a style="color:#1d7dc7;font-weight:bolder;font-size: medium;"><p><h1>Student Registration</h1></p></a>
+            <a style="color:darkgoldenrod;"><p><h3>Assignment 4</h3></p></a>
+            <a style="color: chocolate;"><p><h4>-Anay Mittal CS1 0827CS221036</h4></p></a>
+            </div>
+        </div>
+        <hr>
+        <h1 style="text-align: center;">Registration form</h1>
+        <hr>
+        <div class="box">
+            <div class="frm">
+                <div class="frm1">
+                <form>
+                    <label for ="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <br>
+                    <label for="year">Year:</label><br>
+                    <input type="radio" id="1" name="year" value="1">
+                    <label for="1">1</label><br>
+                    <input type="radio" id="2" name="year" value="2">
+                    <label for="2">2</label><br>
+                    <input type="radio" id="3" name="year" value="3">
+                    <label for="3">3</label><br>
+                    <input type="radio" id="4" name="year" value="4">
+                    <label for="4">4</label><br>
+                    <br>
+                    <label for="class">Class</label><br>
+                    <input type="text"id="class"name="class"><br>
+                    
+                    
+                    <label for="course">Course:</label><br>
+                    <select name="course" id="course">
+                        <option value=""></option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option Value="Information Technology">Information Technology</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                        <option value="Mechanical">Mechanical</option>
+                    </select><br>
+
+                    <label for="birthdate">D.O.B:</label><br>
+                    <input type="date" id="birthdate" name="birthdate"><br>
+
+                    <label for="phone">Phone No.:</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+
+                    <label for="gmail">E-mail ID:</label><br>
+                    <input type="text" id="gmail" name="gmail"><br>
+                    <label for="pass">Password:</label><br>
+                    <input type="password" id="pass" name="pass"><br>
+                    <label for="pass2">Confirm Password:</label><br>
+                    <input type="password" id="pass2" name="pass2"><br>
+                </form>
+                </div>
+                <div class="frm2">
+                    <label for="image">Upload Image:</label><br>
+                    <input type="file" id="image" name="image" accept="image/*"><br>
+                    <div class="bord">
+                        
+                        <img id="image" src="/tfisthis/anay.jpeg" alt="User Image">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="frm3">
+                <label for="confirm" style="display: flex; align-items: center;">
+                    <input type="checkbox" id="confirm" name="confirm" value="confirm" style="margin-right: 5px;">
+                    <p>I hereby confirm that all the information provided by me is correct & any legal actions can be taken if found guilty by the authorities.</p>
+                </label>
+            </div>
+            <br>
+            <div class="subres">
+            <input type="submit" value="Submit" style="margin-right: 5px;">
+            <input type="reset" value="Reset">
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p><h3>Thank You</h3></p>
+        </div>
+    </div>
+</body>
+</html>

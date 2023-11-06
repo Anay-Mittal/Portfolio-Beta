@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16- Login</title>
+    <style>
+        .body{
+            margin:0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: linear-gradient(#04005e,#440bd4,#ff2079,#e92efb);
+
+        }
+        .banner{
+            background: linear-gradient(#ff2079 -50%,#440bd4);
+
+            border: 2px solid red;
+            overflow: hidden;
+        }
+        .outlinedtext{
+            text-align: center;
+            font-family: "lemon milk";
+        }
+        .container {
+            position: relative;
+            width: max-content; 
+            margin-left: 400px;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+
+            opacity: 80%;
+            box-shadow: 12px 10px black;
+        }
+
+       
+        .text2 {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            padding: 10px; 
+            width: 400px;
+            height: 350px;
+            box-shadow: 5px 5px brown;
+        }
+        .button{
+            padding: 1px 100px;
+            background-color: goldenrod;
+            border: 2px solid black;
+            box-shadow: 2px 2px brown;
+            height: max-content;
+        }
+        .button:hover{
+            background-color: aqua;
+        }
+        
+        .footer{
+            background-color: black ;
+            color: wheat;
+            text-align: center;
+            font-family: "lemon milk";
+            height: 100px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="banner">
+            <div class="outlinedtext">
+                <a style="color: black;"><p><h1>Student Login</h1></p></a>
+                <a style="color: black;"><p><h3>Assignment - 16</h3></p></a>
+                <a style="color: khaki;"><p><h4>- Anay Mittal CS1 0827CS221036</h4></p></a>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <img class="image" src="https://th.bing.com/th/id/OIG.l93YF5EjHPn_vHn_VtXB?pid=ImgGn&w=1024&h=1024&rs=1" alt="Your Image">
+            
+            <div class="text2">
+                <h1 style="text-align: center;">Login Window</h1>
+                <br><br>
+                <form>
+                    
+                    <input style="padding: 15px;width: 300px;position: absolute;left: 10%;" type="email" name="email" id="email">
+                    
+                    <label style="position: absolute;left: 35%;color: black;"for="email">Your Email Address:</label>
+                
+                </form>
+                <br><br>
+                <form>
+                    <input style="padding: 15px;position:absolute;top: 55%; width: 300px; left: 10%;" type="password" name="pass" id="pass">
+                    <label style="position:absolute;right: 38%; color: black;top:55%">Your Password:</label>
+                </form>
+                <br>
+                <input style="position: absolute;top: 70%; left: 20%;" type="checkbox">
+                <a style="position: absolute;top: 70%;left: 25%;"><label>Agree with </a><a href="#" style="color: white;position: absolute;top: 70%;left: 44%;">Terms and conditions</a></label>
+                <div class="button button hover" style="position: absolute; top:80%;left: 20%;">
+                    <p>Login</p>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="footer">
+            <p><h3>Thank you</h3></p>
+        </div>
+    </div>
+</body>
+</html>
