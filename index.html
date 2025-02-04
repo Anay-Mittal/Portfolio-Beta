@@ -8,76 +8,25 @@
     <style>
         body {
             background: linear-gradient(#08131D, #18344C);
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
             font-family: 'comic sans';
+            color: wheat;
         }
 
-        .navbar {
-            justify-content: space-around;
-        }
-
-        .navbar2 {
-            justify-content: space-around;
-            padding-left: 31%;
-        }
-
-        .button {
+        .button, .button2 {
             border: none;
             color: wheat;
             padding: 16px 32px;
-            text-align: center;
-            display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
+            transition: 0.4s;
         }
 
         .button2 {
-            border: none;
-            color: wheat;
-            padding: 16px 32px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
             background-color: #0c4274;
         }
 
-        .button2:hover {
+        .button:hover, .button2:hover {
             background-color: #4C7F9F;
             cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #4C7F9F;
-            cursor: pointer;
-        }
-
-        .content {
-            display: flex;
-            padding-top: 20px;
-            justify-content: space-around;
-            padding-right: 135px;
-        }
-
-        .text {
-            text-align: left;
-            color: wheat;
-            padding-left: 32%;
-            
-            
-        }
-        .text2 {
-            text-align: left;
-            color: wheat;
-            padding-left: 32%;
-            font-size: xx-large;
         }
 
         .im2 {
@@ -85,124 +34,164 @@
         }
 
         .im2:hover {
-            cursor: pointer;
             transform: scale(1.1);
         }
 
         .footer {
             background-color: #4C7F9F;
-            color: wheat;
-            text-align: center;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-around;
         }
 
-        .contact {
-            text-align: left;
+        .hr {
+            border-color: wheat;
         }
 
-        .contact2 {
-            display: flex;
+        @media (max-width: 768px) {
+            .content-text {
+                text-align: center!important;
+                margin-bottom: 2rem;
+            }
+            
+            .reverse-order {
+                flex-direction: column-reverse;
+            }
+
+            /* Horizontal mobile menu */
+            .navbar-nav {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .nav-item {
+                white-space: nowrap;
+                margin: 0 8px;
+            }
+
+            .collapse:not(.show) {
+                display: none;
+            }
+
+            .collapse.show {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+            }
+
+            .navbar-toggler {
+                margin-left: auto;
+            }
         }
-        .hr{
-            opacity: 100%;
-            color: wheat;
-       }
+    
     </style>
 </head>
 <body>
-
-    <!-- Bootstrap container to wrap the content -->
     <div class="container">
-
-        <!-- Navigation bar using Bootstrap classes -->
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="index.html"><div class="button2">Home</div></a>
-            <a class="navbar-brand" href="aboutme.html"><div class="button">About Me</div></a>
-            <a class="navbar-brand" href="projects.html"><div class="button">Projects</div></a>
-            <a class="navbar-brand" href="Art.html"><div class="button">Art</div></a>
-            <a class="navbar-brand" href="album.html"><div class="button">Album</div></a>
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html"><div class="button2">Home</div></a>
+                    <a class="nav-item nav-link" href="aboutme2.html"><div class="button">About Me</div></a>
+                    <a class="nav-item nav-link" href="projects2.html"><div class="button">Projects</div></a>
+                    <a class="nav-item nav-link" href="art2.html"><div class="button">Art</div></a>
+                    <a class="nav-item nav-link" href="album2.html"><div class="button">Album</div></a>
+                </div>
+            </div>
         </nav>
-        <hr color="wheat">
+        <hr class="hr">
 
-        <!-- Content section using Bootstrap grid system -->
-        <div class="content">
-            <div class="text2">
-                <a style="font-family:lucida Handwriting;font-size: xx-large;"><h1><u>Anay Mittal</u></h1></a><br>
-                <a style="font-size: xx-large;"><h2>I'm not a narcissist, <br> but here's a website about me,made by me.</h2></a>
+        <!-- Main Content Sections -->
+        <div class="row align-items-center py-5">
+            <div class="col-md-6 content-text">
+                <h1 class="display-4 font-weight-bold"><u>Anay Mittal</u></h1>
+                <h2 class="mt-4">I'm not a narcissist, but here's a website about me, made by me.</h2>
             </div>
-            <div class="im2"><a href="aboutme.html"><img src="Artboard 1.png" height="350px"></a></div>
+            <div class="col-md-6 text-center">
+                <a href="aboutme2.html" class="im2 d-inline-block">
+                    <img src="anay mittal proffesional pic bg remove copy.png" class="img-fluid" style="max-height: 350px;">
+                </a>
+            </div>
         </div>
-        <div class="content">
-            <div class="text">
-            <a style="font-size: xx-large;"><h1><u>My <br> Projects</u></h1></a>
+          <!-- Projects Section -->
+        <div class="row align-items-center py-5">
+            <div class="col-md-6 content-text">
+                <h1 class="display-4 font-weight-bold"><u>My Projects</u></h1>
             </div>
-            <div class="text">
-                <a style="font-size: x-large;color: white;"><h4>Currently <br>learning through assignments & the only thing holding me back is bootstrap.<br><a href="projects.html" style="color: wheat;">Read more..</a></h4></a>
+            <div class="col-md-6 content-text">
+                <h4 class="mt-4" style="color: aliceblue;">Currently learning through assignments & the only thing holding me back is bootstrap</h4>
+                <a href="projects2.html" class="text-wheat" style="color: wheat;">Read more..</a></h4>
             </div>
-        </div><br>
-        <div class="content">
-            
-            <div class="text">
-                <a style="font-size: x-large;color: white;"><h4>From <br>being a content creator to an avg CSE undergrad I have experience of it all<br><a href="Art.html" style="color: wheat;">Read more..</a></h4></a>
-            </div>
-            <div class="text">
-                <a style="font-size: xx-large;"><h1><u>My <br> Experience</u></h1></a>
-                </div>
-        </div><br>
-        <div class="content">
-            <div class="text">
-                <a style="font-size: xx-large;"><h1><u>My <br> Album</u></h1></a>
-                </div>
-            <div class="text">
-                <a style="font-size: x-large;color: white;"><h4>I would <br>say that i'm not the most photogenic person of all time, but i do like to capture moments randomly.<br><a href="album.html" style="color: wheat;">Read more..</a></h4></a>
-            </div>
-            
         </div>
 
 
-        <!-- Other sections with similar modifications using Bootstrap grid system -->
+        <!-- Experience Section -->
+        <div class="row align-items-center py-5">
+            <div class="col-md-6 content-text">
+                <h4 class="mt-4" style="color: aliceblue;">From being a content creator to <br> an avg CSE undergrad, I have experience of it all</h4>
+                <a href="art2.html" class="text-wheat" style="color: wheat;">Read more..</a></h4>
+            </div>
+            <div class="col-md-6 content-text">
+                <h1 class="display-4 font-weight-bold"  ><u>My Experience</u></h1>
+            </div>
+        </div>
 
-        <!-- Navigation bar 2 using Bootstrap classes -->
-        <nav class="navbar2 navbar-expand-lg ">
-            <a class="navbar-brand" href="index.html"><div class="button2">^</div></a>
-            <a class="navbar-brand" href="aboutme.html"><div class="button">2</div></a>
-            <a class="navbar-brand" href="projects.html"><div class="button">3</div></a>
-            <a class="navbar-brand" href="Art.html"><div class="button">4</div></a>
-            <a class="navbar-brand" href="album.html"><div class="button">5</div></a>
+        <!-- Album Section -->
+        <div class="row align-items-center py-5">
+            <div class="col-md-6 content-text">
+                <h1 class="display-4 font-weight-bold"><u>My Album</u></h1>
+            </div>
+            <div class="col-md-6 content-text">
+                <h4 class="mt-4" style="color: aliceblue;">I would say that I'm not the most photogenic person of all time, but I do like to capture moments randomly.</h4>
+                <a href="album2.html" class="text-wheat" style="color: wheat;">Read more..</a></h4>
+            </div>
+        </div>
+
+        <!-- Pagination Navigation -->
+        <nav class="d-flex justify-content-center py-4">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link button2" href="index.html" >^</a></li>
+                <li class="page-item"><a class="page-link button" href="aboutme2.html" style="background-color: cadetblue;">2</a></li>
+                <li class="page-item"><a class="page-link button" href="projects2.html"style="background-color: cadetblue;">3</a></li>
+                <li class="page-item"><a class="page-link button" href="art2.html"style="background-color: cadetblue;">4</a></li>
+                <li class="page-item"><a class="page-link button" href="album2.html"style="background-color: cadetblue;">5</a></li>
+            </ul>
         </nav>
 
-        <hr color="wheat">
+        <hr class="hr">
 
-        <!-- Footer section using Bootstrap classes -->
-        <div class="footer  text-center">
-            <div class="contact"><br>
-                <a style="font-size: x-large ;"><h1><u>Contact Me</u></h1></a><br>
-                <h4>I'm always looking for new opportunities<br>to connect with brilliant minds!<br>Let's Connect.</h4><br>
-                <div class="contact2">
-                    <div class="im2">
-                        <a href="https://instagram.com/anay_2114?igshid=MW11MHk4dWhtOGpmeQ=="><img src="instagram.png"></a>
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h1 class="display-5"><u>Contact Me</u></h1>
+                        <p class="lead mt-3">I'm always looking for new opportunities to connect with brilliant minds!<br>Let's Connect.</p>
+                        <div class="d-flex justify-content-center justify-content-md-start mt-4">
+                            <a href="https://instagram.com/anay_2114" class="im2 mx-3">
+                                <img src="instagram.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://discord.gg/UUE69Gujnm" class="im2 mx-3">
+                                <img src="logo.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCYxiO6X2SArbQYihN2wh4KA" class="im2 mx-3">
+                                <img src="youtube.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                        </div>
                     </div>
-                    <div class="im2">
-                        <a href="https://discord.gg/UUE69Gujnm"><img src="logo.png"></a>
-                    </div>
-                    <div class="im2">
-                        <a href="https://www.youtube.com/channel/UCYxiO6X2SArbQYihN2wh4KA"><img src="youtube.png"></a>
+                    <div class="col-md-6 text-center text-md-right mt-md-5">
+                        <h3><a href="mailto:anay.mittal@gmail.com" class="text-white">anay.mittal@gmail.com</a></h3>
+                        <h3>+91 8452809114</h3>
                     </div>
                 </div>
             </div>
-            <div class="mail"><br><br><br><br><br>
-                <a href="mailto:anay.mittal@gmail.com" style="color: whitesmoke;"><h3>anay.mittal@gmail.com</h3></a>
-                <h3>+91 8452809114</h3>
-            </div>
-        </div>
-
+        </footer>
     </div>
 
-    <!-- Bootstrap JavaScript (optional, but may be required for some components) -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

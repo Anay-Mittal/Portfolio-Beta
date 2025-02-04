@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(#08131D, #18344C);
+            margin: 0;
+            overflow-x: hidden;
+            font-family: 'comic sans';
+        }
+
+        .btn-custom {
+            background-color: #0c4274;
+            color: wheat;
+        }
+
+        .btn-custom:hover {
+            background-color: #4C7F9F;
+            color: wheat;
+        }
+        .card-custom{
+            background-color: antiquewhite;
+        }
+        .card-image{
+            object-fit: cover;
+            height: 6em;
+            width: 100%;
+        }
+        .card:hover .card-image{
+            height: 18em;
+        }
+        .card:hover .card-body{
+            height: 8em;
+            padding: 0;
+        }
+        .card:hover .card-title{
+            opacity: 1;
+        }
+        .card-title{
+            text-align: center;
+            position: relative;
+            top: 10%;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+            color: black;
+            font-size: 1.2em;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .button, .button2 {
+            border: none;
+            color: wheat;
+            padding: 16px 32px;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        .button2 {
+            background-color: #0c4274;
+        }
+
+        .button:hover, .button2:hover {
+            background-color: #4C7F9F;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #4C7F9F;
+        }
+
+        .hr {
+            border-color: wheat;
+        }
+
+        @media (max-width: 768px) {
+            .content-text {
+                text-align: center!important;
+                margin-bottom: 2rem;
+            }
+            
+            .reverse-order {
+                flex-direction: column-reverse;
+            }
+
+            /* Horizontal mobile menu */
+            .navbar-nav {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .nav-item {
+                white-space: nowrap;
+                margin: 0 8px;
+            }
+
+            .collapse:not(.show) {
+                display: none;
+            }
+
+            .collapse.show {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+            }
+
+            .navbar-toggler {
+                margin-left: auto;
+            }
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link " href="index.html"><div class="button">Home</div></a>
+                    <a class="nav-item nav-link" href="aboutme2.html"><div class="button">About Me</div></a>
+                    <a class="nav-item nav-link active" href="projects2.html"><div class="button2">Projects</div></a>
+                    <a class="nav-item nav-link" href="art2.html"><div class="button">Art</div></a>
+                    <a class="nav-item nav-link" href="album2.html"><div class="button">Album</div></a>
+                </div>
+            </div>
+        </nav>
+        <hr class="hr">
+
+        <div class="container mt-5">
+            <div class="card card-custom p-4">
+                <h1 class="content-text" style="font-weight: bolder; font-size:xx-large;"><u>My Tech Adventure</u></h1><br>
+                <h4 class="content-text; " style="font-size: larger;">Had the luck to learn basic C, C++ and Java in high school, which immediately boosted my love for
+                    coding, but the pen-paper method easily killed it too. Thus, leading me to not take CS in 11-12th
+                    but ended up in CSE undergrad after all. Now that I think about it, pen-paper method is also
+                    essential for logic building, but hey, it's just my opinion out of hundreds. I am here to share
+                    some of the "projects" that I made while learning with assignments, just to prove that assignments
+                    can be fun too with just a different approach.</h4><br>
+            </div>
+        </div><br><br>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom">
+                        <a href="resume.html">
+                            <img src="resume.png" class="card-image" alt="Resume">
+                            <div class="card-body">
+                                <h5 class="card-title">My Resume</h5>
+                                <p class="card-text">Everyone says, "you need to make your own resume", I ask, why not
+                                    code it?</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom">
+                        <a href="musiclibrary.html">
+                            <img src="spoti.png" class="card-image" alt="Music Library">
+                            <div class="card-body">
+                                <h5 class="card-title">Music Library</h5>
+                                <p class="card-text">Everyone needs music, even webpages!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom">
+                        <a href="login.html">
+                            <img src="logi.png" class="card-image" alt="Login Page">
+                            <div class="card-body">
+                                <h5 class="card-title">Login Page</h5>
+                                <p class="card-text">This introduced me to "position:relative, top etc"</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom">
+                        <a href="calculator.html">
+                            <img src="calculator.png" class="card-image" alt="Calculator">
+                            <div class="card-body">
+                                <h5 class="card-title">"Functional" Calculator</h5>
+                                <p class="card-text">Just a basic wireframe for a calculator, just cuz i like buttons
+                                    and idk JS :/</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom">
+                        <a href="registrationform.html">
+                            <img src="register.png" class="card-image" alt="Registration">
+                            <div class="card-body">
+                                <h5 class="card-title">Student Registration</h5>
+                                <p class="card-text">The only reason its here is cuz I like the colour choice of it,
+                                    else its pretty mid ngl.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card card-custom">
+                        <a href="result.html">
+                            <img src="result%20.png" class="card-image" alt="RGPV Clone">
+                            <div class="card-body">
+                                <h5 class="card-title">RGPV Clone</h5>
+                                <p class="card-text">This worked so well that I tricked my friend into thinking
+                                    results are out >_> </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="card card-custom p-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 style= "font-weight: bolder;"><u style="font-size: xx-large;">The Best one yet : Startup AYUSH Portal</u></h1><br>
+                        <h4 style="font-size: larger;">We were part of SIH'23 aka Smart India Hackathon 2023, even after our projector failed, our
+                            team leader refused to give up and as a result of collective effort, we got selected in
+                            the internal round of the same, the results are yet to come but, here is how the code
+                            looked: </h4><br>
+                        <div class="video-container">
+                            <video width="520" height="340" controls>
+                                <source src="output.1.mp4" type="video/mp4">
+                                <source src="output.1.mp4" type="video/ogg">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src="WhatsApp Image 2023-11-08 at 14.22.37.jpeg" height="125px" alt="SIH Logo">
+                    </div>
+                </div>
+            </div>
+        </div><br> <!-- Pagination Navigation -->
+        <nav class="d-flex justify-content-center py-4">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link button" href="index.html" style="background-color: cadetblue;" >1</a></li>
+                <li class="page-item"><a class="page-link button" href="aboutme2.html" style="background-color: cadetblue;">2</a></li>
+                <li class="page-item"><a class="page-link button2" href="projects2.html">^</a></li>
+                <li class="page-item"><a class="page-link button" href="art2.html"style="background-color: cadetblue;">4</a></li>
+                <li class="page-item"><a class="page-link button" href="album2.html"style="background-color: cadetblue;">5</a></li>
+            </ul>
+        </nav>
+
+        <hr class="hr">
+
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h1 class="display-5" style="color: wheat;"><u>Contact Me</u></h1>
+                        <p class="lead mt-3" style="color: wheat;">I'm always looking for new opportunities to connect with<br> brilliant minds!<br>Let's Connect.</p>
+                        <div class="d-flex justify-content-center justify-content-md-start mt-4">
+                            <a href="https://instagram.com/anay_2114" class="im2 mx-3">
+                                <img src="instagram.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://discord.gg/UUE69Gujnm" class="im2 mx-3">
+                                <img src="logo.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCYxiO6X2SArbQYihN2wh4KA" class="im2 mx-3">
+                                <img src="youtube.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right mt-md-5">
+                        <h3 style="font-size: xx-large;"><a href="mailto:anay.mittal@gmail.com" class="text-white">anay.mittal@gmail.com</a></h3>
+                        <h3 style="font-size: xx-large;">+91 8452809114</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(#08131D, #18344C);
+            font-family: 'Comic Sans', cursive;
+            color: wheat;
+        }
+
+        .button, .button2 {
+            border: none;
+            color: wheat;
+            padding: 16px 32px;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        .button2 {
+            background-color: #0c4274;
+        }
+
+        .button:hover, .button2:hover {
+            background-color: #4C7F9F;
+            cursor: pointer;
+        }
+
+        .content-block {
+            background-color: antiquewhite;
+            box-shadow: 5px 5px #4C7F9F;
+            border-radius: 10px;
+            color: #08131D;
+            margin: 20px 0;
+            padding: 30px;
+        }
+
+        .im2 {
+            transition: transform 0.3s;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .im2:hover {
+            transform: scale(1.05);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .cblock{
+                background-image: url(https://yt3.googleusercontent.com/75uX6X_PrBTgvKhlgiKRtLwp24WzT4pORgBqWVBAtAH8d1kNRr_aTQIPkB6_DslB_sPjWn9tqw=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj);
+                width: 153%;
+                height: 350px;
+            }
+
+        .test{
+            object-fit: contain;
+        }
+        .cb{
+            object-fit: contain;
+            box-shadow: 5px 5px #4C7F9F;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 1px;
+        }
+
+        .hr{
+            color: wheat;
+            background-color: wheat;
+        }
+
+        .footer {
+            background-color: #4C7F9F;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: row;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .content-block {
+                margin: 10px 0;
+                padding: 20px;
+                object-fit: contain;
+                text-align: center;
+            }
+
+          
+            
+            .mobile-order-1 {
+                order: 1;
+            }
+            
+            .mobile-order-2 {
+                order: 2;
+            }
+
+            .reverse-order {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html"><div class="button">Home</div></a>
+                    <a class="nav-item nav-link" href="aboutme2.html"><div class="button">About Me</div></a>
+                    <a class="nav-item nav-link" href="projects2.html"><div class="button">Projects</div></a>
+                    <a class="nav-item nav-link " href="art2.html"><div class="button">Art</div></a>
+                    <a class="nav-item nav-link active" href="album2.html"><div class="button2">Album</div></a>
+                </div>
+            </div>
+        </nav>
+
+        <hr class="hr">
+        <!-- Main Content -->
+<br>
+        <div class="cb">
+            <img src="al.jpg" class="im2 img-fluid">
+        </div>
+        <div class="content-block" style="text-align: center; background-color: #C6B796; ">
+            <div  style="text-align: center;">
+                    <h1 class="display-6">I would say that I'm not the most photogenic person, but i do like to capture most of moments in my life to have something to look back to.</h1>                
+            </div>
+        </div>
+      <br><br>
+
+        <!-- Video Sections -->
+        <div class="content-block">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mobile-order-2">
+                        <a href="scenic2.html"><img src="sc.jpg" class="im2 img-fluid"></a>
+                </div>
+                <div class="col-lg-6 mobile-order-1">
+                    <a href="scenic2.html" style="color: #08131D;"><h1 class="font-italic"><u>Nature</u></h1></a><br>
+                    <h4>Give me a cup of Coffee and some nice view, and watch me just Sit there and do nothing <br> -Me Probably </h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat similar structure for other video sections -->
+
+        <div class="content-block">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mobile-order-1">
+                    <a href="memories2.html" style="color: #08131D;"><h1 class="font-italic"><u>Memories</u></h1></a><br>
+                    <h4>"We keep this love in a photograph. We make these memories for ourselves. Where our eyes are never closing, Hearts are never broken, Times forever frozen still."<br>-Ed Sheeran</h4>
+                </div>
+                <div class="col-lg-6 mobile-order-2">
+                    <a href="memories2.html"><img src="mem.jpg" class="im2 img-fluid"></a>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <!-- Pagination -->
+        <nav class="d-flex justify-content-center py-4">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link button" href="index.html" style="background-color: cadetblue;">1</a></li>
+                <li class="page-item"><a class="page-link button" href="aboutme2.html" style="background-color: cadetblue;">2</a></li>
+                <li class="page-item"><a class="page-link button" href="projects2.html" style="background-color: cadetblue;">3</a></li>
+                <li class="page-item"><a class="page-link button" href="art2.html" style="background-color: cadetblue;">4</a></li>
+                <li class="page-item"><a class="page-link button2" href="album2.html">^</a></li>
+            </ul>
+        </nav>
+
+        <hr class="hr">
+
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h1 class="display-5"><u>Contact Me</u></h1>
+                        <p class="lead mt-3">I'm always looking for new opportunities to connect with brilliant minds!<br>Let's Connect.</p>
+                        <div class="d-flex justify-content-center justify-content-md-start mt-4">
+                            <a href="https://instagram.com/anay_2114" class="im2 mx-3">
+                                <img src="instagram.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://discord.gg/UUE69Gujnm" class="im2 mx-3">
+                                <img src="logo.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCYxiO6X2SArbQYihN2wh4KA" class="im2 mx-3">
+                                <img src="youtube.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right mt-md-5">
+                        <h3><a href="mailto:anay.mittal@gmail.com" class="text-white">anay.mittal@gmail.com</a></h3>
+                        <h3>+91 8452809114</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

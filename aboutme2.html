@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(#08131D, #18344C);
+            font-family: 'comic sans';
+            color: wheat;
+        }
+
+        .button, .button2 {
+            border: none;
+            color: wheat;
+            padding: 16px 32px;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        .button2 {
+            background-color: #0c4274;
+        }
+
+        .button:hover, .button2:hover {
+            background-color: #4C7F9F;
+            cursor: pointer;
+        }
+
+        .ntainer, .ntainer2 {
+            background-color: antiquewhite;
+            box-shadow: 5px 5px #4C7F9F;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            color: #08131D;
+        }
+
+        .im2 {
+            transition: transform 0.3s;
+        }
+
+        .im2:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #4C7F9F;
+            color: wheat;
+            padding: 20px;
+        }
+
+        .text {
+            font-family: 'Comic Sans', cursive;
+            color: #08131D;
+            letter-spacing: 1px;
+        }
+
+        .hr {
+            border-color: wheat;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .nav-item {
+                white-space: nowrap;
+                margin: 0 8px;
+            }
+
+            .collapse:not(.show) {
+                display: none;
+            }
+
+            .collapse.show {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+            }
+
+            .navbar-toggler {
+                margin-left: auto;
+            }
+
+            .ntainer, .ntainer2 {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html"><div class="button">Home</div></a>
+                    <a class="nav-item nav-link active" href="aboutme2.html"><div class="button2">About Me</div></a>
+                    <a class="nav-item nav-link" href="projects2.html"><div class="button">Projects</div></a>
+                    <a class="nav-item nav-link" href="art2.html"><div class="button">Art</div></a>
+                    <a class="nav-item nav-link" href="album2.html"><div class="button">Album</div></a>
+                </div>
+            </div>
+        </nav>
+        <hr class="hr">
+
+        <!-- Main Content -->
+        <div class="ntainer">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="IMG20230729112727.jpg" alt="Your Alt Text" class="img-fluid rounded-lg">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4 font-weight-bold">Hello!</h1>
+                    <p class="mt-4" >
+                        I'm a complex guy that craves progress, from learning graphic design to web development I know that I have miles to cover. From being a "successful" content creator to a below-average college student, I have experience of it all.
+                    </p>
+                    <div class="d-flex mt-4">
+                        <a href="https://instagram.com/anay_2114" class="im2 mx-3">
+                            <img src="instagram.png" class="img-fluid" style="max-height: 40px;">
+                        </a>
+                        <a href="https://discord.gg/UUE69Gujnm" class="im2 mx-3">
+                            <img src="logo.png" class="img-fluid" style="max-height: 40px;">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCYxiO6X2SArbQYihN2wh4KA" class="im2 mx-3">
+                            <img src="youtube.png" class="img-fluid" style="max-height: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A.N.A.Y Sections -->
+        <div class="ntainer2 mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-1">
+                    <h1 class="display-4 font-weight-bold">A</h1>
+                </div>
+                <div class="col-md-11">
+                    <h3 class="italic">Aspiring.</h3>
+                    <p>I am an aspiring computer science student, continuously striving to achieve new heights and make a meaningful impact in my own life.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ntainer2 mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-1">
+                    <h1 class="display-4 font-weight-bold">N</h1>
+                </div>
+                <div class="col-md-11">
+                    <h3 class="italic">Nurturer.</h3>
+                    <p>I believe in nurturing ideas, fostering innovation, and cultivating solutions that positively impact the digital landscape.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ntainer2 mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-1">
+                    <h1 class="display-4 font-weight-bold">A</h1>
+                </div>
+                <div class="col-md-11">
+                    <h3 class="italic">Adventurous.</h3>
+                    <p>My passion for exploration and problem-solving fuels an adventurous journey through the digital realm, pushing boundaries and seeking new horizons.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ntainer2 mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-1">
+                    <h1 class="display-4 font-weight-bold">Y</h1>
+                </div>
+                <div class="col-md-11">
+                    <h3 class="italic">Yearning.</h3>
+                    <p>With an unceasing yearning for knowledge and a commitment to perpetual self-improvement, I embrace the evolving challenges of the tech world.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination Navigation -->
+        <nav class="d-flex justify-content-center py-4">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link button" href="index.html" style="background-color: cadetblue;">1</a></li>
+                <li class="page-item"><a class="page-link button2" href="aboutme2.html">^</a></li>
+                <li class="page-item"><a class="page-link button" href="projects2.html" style="background-color: cadetblue;">3</a></li>
+                <li class="page-item"><a class="page-link button" href="art2.html" style="background-color: cadetblue;">4</a></li>
+                <li class="page-item"><a class="page-link button" href="album2.html" style="background-color: cadetblue;">5</a></li>
+            </ul>
+        </nav>
+
+        <hr class="hr">
+
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h1 class="display-5"><u>Contact Me</u></h1>
+                        <p class="lead mt-3">I'm always looking for new opportunities to connect with brilliant minds!<br>Let's Connect.</p>
+                        <div class="d-flex justify-content-center justify-content-md-start mt-4">
+                            <a href="https://instagram.com/anay_2114" class="im2 mx-3">
+                                <img src="instagram.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://discord.gg/UUE69Gujnm" class="im2 mx-3">
+                                <img src="logo.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCYxiO6X2SArbQYihN2wh4KA" class="im2 mx-3">
+                                <img src="youtube.png" class="img-fluid" style="max-height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right mt-md-5">
+                        <h3><a href="mailto:anay.mittal@gmail.com" class="text-white">anay.mittal@gmail.com</a></h3>
+                        <h3>+91 8452809114</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
