@@ -1,0 +1,139 @@
+body {
+    background: linear-gradient(#08131D, #18344C);
+    font-family: 'Comic Sans';
+    color: wheat;
+}
+
+.button, .button2 {
+    border: none;
+    color: wheat;
+    padding: 16px 32px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.button2 {
+    background-color: #0c4274;
+}
+
+.button:hover, .button2:hover {
+    background-color: #4C7F9F;
+    cursor: pointer;
+}
+
+.content-block {
+    background-color: antiquewhite;
+    box-shadow: 5px 5px #4C7F9F;
+    border-radius: 10px;
+    color: #08131D;
+    margin: 20px 0;
+    padding: 30px;
+}
+
+.content-block2 {
+    background-color: #C6B796;
+    box-shadow: 5px 5px #4C7F9F;
+    border-radius: 10px;
+    color: #08131D;
+    margin: 20px 0;
+    padding: 30px;
+}
+
+.im2 {
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+
+.im2:hover {
+    transform: scale(1.05);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cblock{
+        background-image: url(https://yt3.googleusercontent.com/75uX6X_PrBTgvKhlgiKRtLwp24WzT4pORgBqWVBAtAH8d1kNRr_aTQIPkB6_DslB_sPjWn9tqw=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj);
+        width: 153%;
+        height: 350px;
+    }
+
+.test{
+    object-fit: contain;
+}
+.cb{
+    object-fit: contain;
+    box-shadow: 5px 5px #4C7F9F;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 1px;
+    
+}
+
+.hr{
+    color: wheat;
+    background-color: wheat;
+}
+
+.footer {
+    background-color: #4C7F9F;
+}
+
+.title{
+    background-color: #08131D;
+    color: antiquewhite;
+    font-family: 'comic sans';
+    opacity: 0%;
+    position: relative;
+    overflow: hidden;
+    object-fit: contain;
+}
+.titext{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+.title:hover{
+    opacity: 50%;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .content-block {
+        margin: 10px 0;
+        padding: 20px;
+        object-fit: contain;
+        text-align: center;
+    }
+
+  
+    
+    .mobile-order-1 {
+        order: 1;
+    }
+    
+    .mobile-order-2 {
+        order: 2;
+    }
+
+    .reverse-order {
+        flex-direction: column-reverse;
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="styles_projects.css">
     <link rel="icon" href="Untitled51.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -17,57 +18,10 @@
             font-family: 'comic sans';
         }
 
-        .btn-custom {
-            background-color: #0c4274;
-            color: wheat;
-        }
-
-        .btn-custom:hover {
-            background-color: #4C7F9F;
-            color: wheat;
-        }
         .card-custom{
             background-color: antiquewhite;
         }
-        .card-image{
-            object-fit: cover;
-            height: 6em;
-            width: 100%;
-        }
-        .card:hover .card-image{
-            height: 18em;
-        }
-        .card:hover .card-body{
-            height: 8em;
-            padding: 0;
-        }
-        .card:hover .card-title{
-            opacity: 1;
-        }
-        .card-title{
-            text-align: center;
-            position: relative;
-            top: 10%;
-            opacity: 0;
-            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-            color: black;
-            font-size: 1.2em;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-container iframe,
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+       
 
         .button, .button2 {
             border: none;
@@ -85,52 +39,7 @@
             background-color: #4C7F9F;
             cursor: pointer;
         }
-        .footer {
-            background-color: #4C7F9F;
-        }
-
-        .hr {
-            border-color: wheat;
-        }
-
-        @media (max-width: 768px) {
-            .content-text {
-                text-align: center!important;
-                margin-bottom: 2rem;
-            }
-            
-            .reverse-order {
-                flex-direction: column-reverse;
-            }
-
-            /* Horizontal mobile menu */
-            .navbar-nav {
-                flex-direction: row;
-                flex-wrap: nowrap;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            .nav-item {
-                white-space: nowrap;
-                margin: 0 8px;
-            }
-
-            .collapse:not(.show) {
-                display: none;
-            }
-
-            .collapse.show {
-                display: block;
-                width: 100%;
-                overflow-x: auto;
-            }
-
-            .navbar-toggler {
-                margin-left: auto;
-            }
-        }
-    
+        
     </style>
 </head>
 

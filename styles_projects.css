@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(#08131D, #18344C);
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'comic sans';
+}
+
+.btn-custom {
+    background-color: #0c4274;
+    color: wheat;
+}
+
+.btn-custom:hover {
+    background-color: #4C7F9F;
+    color: wheat;
+}
+.card-custom{
+    background-color: antiquewhite;
+}
+.card-image{
+    object-fit: cover;
+    height: 6em;
+    width: 100%;
+}
+.card:hover .card-image{
+    height: 18em;
+}
+.card:hover .card-body{
+    height: 8em;
+    padding: 0;
+}
+.card:hover .card-title{
+    opacity: 1;
+}
+.card-title{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+    color: black;
+    font-size: 1.2em;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button, .button2 {
+    border: none;
+    color: wheat;
+    padding: 16px 32px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.button2 {
+    background-color: #0c4274;
+}
+
+.button:hover, .button2:hover {
+    background-color: #4C7F9F;
+    cursor: pointer;
+}
+.footer {
+    background-color: #4C7F9F;
+}
+
+.hr {
+    border-color: wheat;
+}
+
+@media (max-width: 768px) {
+    .content-text {
+        text-align: center!important;
+        margin-bottom: 2rem;
+    }
+    
+    .reverse-order {
+        flex-direction: column-reverse;
+    }
+
+    /* Horizontal mobile menu */
+    .navbar-nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+        margin: 0 8px;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+
+    .collapse.show {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
